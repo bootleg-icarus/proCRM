@@ -8,7 +8,10 @@ import { StudentComponent } from './student/student.component';
 
 const routes: Routes = [
   {path:"", component:LoginComponent},
-  {path:"dashboard", component:DashboardComponent, canActivate:[AuthGuard], children:[
+  {path:"dashboard", 
+   component:DashboardComponent, 
+   canActivate:[AuthGuard], 
+   children:[
     {path:"students", component:StudentComponent}
   ]}
 ];

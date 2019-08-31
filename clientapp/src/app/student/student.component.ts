@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-student',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
 
-  constructor() { }
+  list;
 
-  ngOnInit() {
+  constructor( private data: DataService) { }
+
+  ngOnInit() {}
+
+  getDataMongo(){
+    this.data.getMongo().subscribe((d)=>{
+      this.list=d;
+      console.log(this.list);
+    })
   }
 
 }
