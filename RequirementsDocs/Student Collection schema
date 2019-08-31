@@ -1,0 +1,14 @@
+Database : proCRM
+Collection : Student
+
+Schema:
+{
+	_id : ObjectId,
+	name: "Student1",
+	age : "20",
+	course: "MEAN Stack",
+	contact:{
+		email: "studenttest1@gmail.com",
+		phone: "1234567960"
+		}
+}
