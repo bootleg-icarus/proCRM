@@ -1,21 +1,44 @@
-<p>student works!</p>
-<button (click)="getDataMongo()">Click Me!</button>
 
-<div>
-    <table>
-        <thead >
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Course</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor = " let data of list ">
-                <td>{{data.name}}</td>
-                <td>{{data.age}}</td>
-                <td>{{data.course}}</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="container">
+
+<div class="left-pane">
+    <div class="agenda">
+        Agenda
+        
+        <div class="yesterday">Yesterday's ToDo List</div>
+        <div class="today">Today's ToDo List</div>
+        <div class="tomorrow">Tomorrow's ToDo List</div>
+    </div>
+    
+    <div class="attendance">
+        Attendance/ Raise Leave Request
+        <div class="calender">calender Marking Attendance</div>
+    </div>
+    
+    <div class="extra">
+        Extra Reading Material ( PDFs, Links, Blogs, RSS Feeds)
+    </div>    
+</div>
+
+<div class="right-pane">
+
+    <div class="directory">
+        MEAN -- <br> &nbsp;|| --
+        <a href="#">MongoDB</a><br>
+        ||--<a href="#">Express</a><br>
+        ||--<a href="#">Angular</a><br>
+        ||--<a href="#">NodeJS</a>
+    </div>
+
+    <div class="question">
+        Raise Question/ Add Topic
+        <input type="text" name="" id="">
+        <button>Submit</button>
+    </div>
+
+    <div class="feedback">
+        <input type="text" name="" id="">
+        <button>Submit</button>
+    </div>
+</div>
 </div>

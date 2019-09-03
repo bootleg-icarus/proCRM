@@ -11,9 +11,8 @@ const routes: Routes = [
   {path:"dashboard", 
    component:DashboardComponent, 
    canActivate:[AuthGuard], 
-   children:[
-    {path:"students", component:StudentComponent}
-  ]}
+  },
+  {path:'student',component:StudentComponent}
 ];
 
 @NgModule({
